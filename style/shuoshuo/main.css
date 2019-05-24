@@ -1,0 +1,115 @@
+
+.pengyou-ss-head{
+	position: fixed;
+	width: 100%;
+	max-width: 500px;
+	height: 40px;
+}
+.pengyou-ss-head-left{
+	display: inline;
+}
+.pengyou-ss-head-right{
+	display: inline;
+}
+.pengyou-ss-head-left span{
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 40px;
+	position: absolute;
+	left:10px;
+	cursor: pointer;
+}
+.pengyou-ss-head-right span{
+	color: #32b431;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 40px;
+	position: absolute;
+	right:10px;
+	cursor: pointer;
+}
+.pengyou-ss-head-right input{
+	color: #32b431;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 40px;
+	position: absolute;
+	right:10px;
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+.pengyou-ss-dingwei{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+.pengyou-ss-font{
+	width:100%;
+	height: 100px;
+	background-color: aqua;
+	margin-bottom: 10px;
+}
+.pengyou-ss-font textarea{
+	width: 100%;
+	height: 100%;
+	background-color: none;
+	border: none;
+	color: #232323;
+	font-size: 20px;
+	border-bottom: 1px solid #BCBCBC;
+	
+}
+.box2,.box3,.box4{
+		border:solid 1px #ccc;
+}
+html,body{
+		 font-family:Arial,Helvetica,sans-serif;
+	}
+	li{
+		list-style: none;
+	}
+	img{
+		border:none;display: block
+	}
+	.box{
+		width: 1024px;margin: 50px auto;
+	}
+	.imgFileUploade{
+		width: 100%;padding: 10 0px;
+	}
+	.imgFileUploade .header{
+		height: 50px;width: 100%;line-height:50px;
+	}
+	.imgFileUploade .header span{
+		display: block;float:left;
+	}
+	.imgFileUploade .header span.imgTitle{
+		line-height:50px;
+	}
+	.imgFileUploade .header span.imgTitle b{
+		color:red;margin:0 5px;line-height: 57px;display: block;float: right;font-size: 20px;
+	}
+	.imgFileUploade .header span.imgClick{
+		width: 50px;height: 50px;margin-left: 10px;cursor: pointer;
+		background: url(../../images/icon/addUpload.png) no-repeat center center;background-size:cover; 
+	}
+	.imgFileUploade .header span.imgcontent{
+		color:#999;margin-left:120px;line-height: 20px;
+	}
+	.imgFileUploade .imgAll{
+		width: 100%;    margin-top: 80px;
+	}
+	.imgFileUploade .imgAll ul:after{ 
+			visibility: hidden;  display: block; font-size: 0; content: ".";  clear: both; height: 0
+	} 
+	.imgFileUploade .imgAll li{
+		width: 100px;height: 100px;border:solid 1px #ccc;margin:8px 5px;float: left;position: relative;box-shadow: 0 0 10px #eee;
+	}
+	.imgFileUploade .imgAll li img{
+		position: absolute;top:0;left:0;width: 100%;height: 100%;display: block;
+	}
+	.delImg{
+		position: absolute;top:-10px;right:-7px;width: 22px;height: 22px;background: #000;border-radius: 50%;display: block;text-align:  center;line-height: 22px;color:#fff;font-weight: 700;font-style:normal;cursor: pointer;
+	}

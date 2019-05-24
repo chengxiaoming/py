@@ -1,0 +1,187 @@
+@keyframes tishik
+{
+	
+
+	0%{
+		transform: scale(0.6);
+	
+	}
+	10%{
+		transform: scale(0.6);	
+		transform: rotateY(45deg);
+	}
+	20%{
+		transform: scale(0.7)
+	}
+	50%{
+		transform: scale(1);
+	}
+	80%{
+		transform: scale(1);
+	}	
+	
+}
+/*提示框*/
+#zhezhao{
+	z-index: 0;
+	background-color: rgba(0,0,0,0.3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom:0;
+	right:0;
+	
+}
+#tishik{
+	position: absolute;
+	left: 650px;
+	top:400px;
+	width: 200px;
+	background-color: #f5f5f5;
+	box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+	border-radius: 5px;
+	animation: tishik 1s ease-in-out ;
+	animation-fill-mode: backwards;
+}
+.tsk-img{
+	width: 100%;
+	height: 80px;
+
+
+}
+.tsk-img img{
+	margin-top: 20px;
+	width: 50px;
+	height: 50px;
+
+}
+#tsk-p{
+	color: rgba(0,0,0,0.5);
+	margin: 0 auto;
+	font-size: 20px;
+	margin-bottom: 20px;
+	padding: 0 10px;
+
+}
+#tishik input{
+	cursor: pointer;
+	width: 80%;
+	height: 30px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	background-color: #2196F3;
+	border: 1px solid rgba(0,150,245,1.00);
+	border-radius: 15px;
+}
+
+
+/*底部*/
+.yiqi-buttom{
+	position: fixed;
+	bottom: 0;
+	font-size: 13px;
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+	line-height: 50px;
+	color: #676767;
+}
+/*大按钮*/
+.yiqi-biginput{
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*弹出表单提交*/
+#yiqi-tijiaok{
+	background-color: #f5f5f5;
+	box-shadow: 2px 2px 20px #ccc;
+	position: fixed;
+	top: 15%;
+	left: 35%;
+	transition: all 1s;
+}
+.yiqi-tijiaok-head{
+	width: 100%;
+	height: 60px;
+	background-color:#fff;
+}
+.yiqi-tijiaok-head P{
+	line-height: 60px;
+	color: #636363;
+	font-size: 20px;
+	margin-left: 30px;
+}
+.yiqi-tijiaok-input{
+	width: 500px;
+	margin: 0 auto;
+}
+.yiqi-tijiaok-input input{
+	width: 90%;
+	height: 40px;
+	margin: 10px;
+	text-indent: 10px;
+	font-size: 14px;
+}
+.yiqi-tijiaok-tj{
+	width: 100%;
+	height: 60px;
+}
+.yiqi-tijiaok-btn{
+	width: 90px;
+	height: 40px;
+	color: #fff;
+	font-size: 15px;
+	margin:0 10px;
+	line-height: 40px;
+	border-radius: 3px;
+	cursor: pointer;
+	display: inline-block;
+}
+.yiqi-tijiaok-yes{
+	background-color: #0D8CDD;
+}
+.yiqi-tijiaok-no{
+	background-color: #AA0104;
+}
+.yiqi-tijiaok-input select{
+	width: 90%;
+	height: 45px;
+	margin: 12px 0;
+	text-indent: 10px;
+	font-size: 15px;
+}
+body{
+	background-color: #cb4042;
+}	
+::-webkit-scrollbar{width:0px}
+#box{
+	width: 500px;
+	height: 90%;
+	background-color: rgba(255,255,255,1.00);
+	margin:auto; 
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#dingwei{
+	width:100%;
+	height:100%;
+	position: relative;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling:touch;
+}
+@media screen and (max-width: 600px){
+	#box{
+	width: 100%;
+	height: 100%;
+	}
+}
+.clear{ 
+	clear:both
+} 
+div span{word-wrap:break-word;}
