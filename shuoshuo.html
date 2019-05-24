@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>记录时刻</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style/reset.css">
+<link rel="stylesheet" href="style/yiqi.css">
+<link rel="stylesheet" href="style/shuoshuo/main.css">
+</head>
+<script type="text/javascript" src="js/jQuery.min.js"></script>
+<script type="text/javascript" src="js/yiqi.js"></script>
+<body>
+	<form action="pic2.php" method="POST" enctype="multipart/form-data">
+	<div id='box'>
+		<div id='dingwei'>
+			<div class="pengyou-ss-head">
+				<div class="pengyou-ss-head-left"><span onClick="Dqopen('index.php');">取消</span></div>
+				<div class="pengyou-ss-head-right"><input type="submit" value="发布"></div>
+			</div>
+			<div class="pengyou-ss-dingwei">
+				<div class="pengyou-ss-font">
+					<textarea placeholder="这一刻的想法...." maxlength="1000" id ="pengyou-wz-nr" name="pengyou-wz-nr"></textarea>
+				</div>
+				<div class="pengyou-ss-font" style="height:50px">
+					<textarea placeholder="QQ号码" maxlength="20" id ="pengyou-wz-qq" name="pengyou-wz-qq" style="height:50px"></textarea>
+				</div>
+				<div class="pengyou-upload-insert">
+					<div class="box2" style="width:100%;margin:50px auto"></div>
+						
+					
+						
+				
+				</div>
+			</div>
+		</div>
+	</div>
+			</form>
+</body>
+<script type="text/javascript" src="js/imgFileupload.js"></script>
+<script type="text/javascript">
+	var imgFile1 = new ImgUploadeFiles('.box2',function(e){
+		this.init({
+			MAX : 9,
+			MH : 5000, //像素限制高度
+			MW : 5000, //像素限制宽度
+			callback : function(arr){
+				console.log(arr)
+			}
+		});
+	});
+	
+</script>
+
+	<script type="text/javascript">
+			var z = 1;
+			var tjbutid=$("#pengyou_upload_input").attr('dqtj'),
+					butid=parseInt(tjbutid)+1;
+			var uploadbut = function(id){
+				$("#tjimg"+id).click();
+			}
+	</script>
+	<script type="text/javascript" src="js/imgFileupload.js"></script>
+</html>
