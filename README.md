@@ -4,6 +4,10 @@
 前端：html+css+js+jQuery
 后端：php5.4+mysql 建议php5.5版本以下
 
+搭建方法：
+修改conn/conn.php的数据库配置文件
+修改pic.php,pic2.php,pic3.php的七牛对象储存Key
+导入pengyou.sql数据库
 
 用户端功能
 1.自适应手机，电脑。
